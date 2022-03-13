@@ -1,6 +1,7 @@
 package com.example.charles.walmartapp
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.example.charles.walmartapp.databinding.ActivityShoppingBinding
@@ -21,6 +22,7 @@ class ShoppingActivity : Activity(){
 
         shopBinder.electronics.setOnClickListener{
             toast(ActivityShoppingBinding::electronics.name)
+            Intent(this@ShoppingActivity, ItemList::class.java).also { startActivity(it) }
         }
 
         shopBinder.beauty.setOnClickListener{

@@ -24,6 +24,12 @@
         <activity
             android:name=".ShoppingActivity"
             android:exported="false" />
+        <activity
+            android:name=".ItemDescription"
+            android:exported="false" />
+        <activity
+            android:name=".ItemList"
+            android:exported="false" />
     </application>
 
 </manifest>
